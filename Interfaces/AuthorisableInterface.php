@@ -1,5 +1,5 @@
 <?php
-namespace Pandora3\Plugins\Authorisation;
+namespace Pandora3\Plugins\Authorisation\Interfaces;
 
 interface AuthorisableInterface {
 

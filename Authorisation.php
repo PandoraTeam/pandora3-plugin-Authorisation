@@ -3,6 +3,8 @@ namespace Pandora3\Plugins\Authorisation;
 
 use Pandora3\Core\Interfaces\SessionInterface;
 use Pandora3\Plugins\Authorisation\Exceptions\AuthorisationFailedException;
+use Pandora3\Plugins\Authorisation\Interfaces\AuthorisableInterface;
+use Pandora3\Plugins\Authorisation\Interfaces\UserProviderInterface;
 
 /**
  * Class Authorisation
