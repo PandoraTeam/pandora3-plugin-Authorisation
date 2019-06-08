@@ -72,6 +72,15 @@ class Authorisation {
 		$this->authorise($user);
 		return $user;
 	}
+	
+	/**
+	 * @return bool
+	 */
+	public function isAuthorised(): bool {
+		$user = $this->getUser();
+		$guest = $this->userProvider->getGuestUser();
+		return $guest ? ($user !== $guest) : !is_null($user);
+	}
 
 	/**
 	 * @return AuthorisableInterface|null
