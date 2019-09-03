@@ -9,6 +9,10 @@ use Pandora3\Core\Middleware\Interfaces\MiddlewareInterface;
 use Pandora3\Core\Router\RequestHandler;
 use Pandora3\Plugins\Authorisation\Authorisation;
 
+/**
+ * Class AuthorisedMiddleware
+ * @package Pandora3\Plugins\Authorisation\Middlewares
+ */
 class AuthorisedMiddleware implements MiddlewareInterface {
 	
 	/** @var RequestHandlerInterface $unauthorisedHandler */
