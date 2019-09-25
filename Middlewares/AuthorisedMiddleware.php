@@ -36,7 +36,7 @@ class AuthorisedMiddleware implements MiddlewareInterface {
 	/**
 	 * {@inheritdoc}
 	 */
-	function process(RequestInterface $request, array $arguments, RequestHandlerInterface $handler): ResponseInterface {
+	function process(RequestInterface $request, RequestHandlerInterface $handler, ...$arguments): ResponseInterface {
 		if (!$this->authorisation->isAuthorised()) {
 			$handler = $this->unauthorisedHandler;
 		}
